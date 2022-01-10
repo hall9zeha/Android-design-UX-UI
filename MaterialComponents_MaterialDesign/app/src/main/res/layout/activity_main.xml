@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@id/etName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        app:helperText="nombre y apellidos"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle"
+        app:layout_constraintBottom_toBottomOf="@id/etPassword">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        app:helperText="Mínimo 8 caracteres"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnLogin"
+    android:text="Iniciar sesión"
+    android:layout_marginTop="30dp"
+    app:layout_constraintTop_toBottomOf="@id/etPassword"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
