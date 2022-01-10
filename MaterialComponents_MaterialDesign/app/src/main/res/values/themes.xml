@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -11,20 +11,31 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-       <!-- por ahora podemos aplicar el cambio de color del toolbar con styleActionBar, mientras que en Appcompat
+        <!-- por ahora podemos aplicar el cambio de color del toolbar con styleActionBar, mientras que en Appcompat
         es más facil en Material components nos falta averiguarlo-->
-      <!--  <item name="actionBarStyle">@style/MyToolbarStyle</item>-->
+        <!--  <item name="actionBarStyle">@style/MyToolbarStyle</item>-->
 
         <!-- Customize your theme here. -->
     </style>
-    <style name="MyToolbarStyle" parent ="Widget.MaterialComponents.ActionBar.Solid">
+
+    <style name="MyToolbarStyle" parent="Widget.MaterialComponents.ActionBar.Solid">
         <item name="background">@color/teal_200</item>
 
-     <!--   <item name="titleTextStyle">@style/myTitleToolbarStyle</item>-->
+        <!--   <item name="titleTextStyle">@style/myTitleToolbarStyle</item>-->
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="myTitleToolbarStyle">
         <item name="android:textColor">@color/white</item>
     </style>
+
+    <style name="Theme.MaterialDesign.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MaterialDesign.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MaterialDesign.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

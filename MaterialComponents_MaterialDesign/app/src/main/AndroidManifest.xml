@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialDesign">
         <activity
+            android:name=".StaticActivity"
+            android:exported="true"
+            android:label="@string/title_activity_static"
+            android:theme="@style/Theme.MaterialDesign.NoActionBar" />
+        <activity
+            android:name=".ScrollActivity"
+            android:exported="true"
+            android:label="@string/title_activity_scroll"
+            android:theme="@style/Theme.MaterialDesign.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

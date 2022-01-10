@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/item_component.xml" value="0.2" />
+        <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_scroll.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/content_static.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/item_component.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>
