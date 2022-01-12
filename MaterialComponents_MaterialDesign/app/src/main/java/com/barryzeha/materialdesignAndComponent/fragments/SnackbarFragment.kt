@@ -5,28 +5,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.barryzeha.materialdesignAndComponent.R
-import com.barryzeha.materialdesignAndComponent.databinding.FragmentButtonBinding
+import com.barryzeha.materialdesignAndComponent.databinding.FragmentSnackbarBinding
 import com.barryzeha.materialdesignAndComponent.utils.Component
 import com.barryzeha.materialdesignAndComponent.utils.Constants
+import com.google.android.material.snackbar.Snackbar
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-private lateinit var bind:FragmentButtonBinding ;
-/**
- * A simple [Fragment] subclass.
- * Use the [ButtonFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class ButtonFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
+
+class SnackbarFragment : Fragment() {
+
     private var param1: String? = null
     private var param2: String? = null
-
-
+    private lateinit var bind:FragmentSnackbarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,32 +36,32 @@ class ButtonFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        bind= FragmentButtonBinding.inflate(inflater)
-        bind.btnEnable.setOnClickListener { Toast.makeText(activity, "Enable", Toast.LENGTH_SHORT).show() }
+        bind= FragmentSnackbarBinding.inflate(inflater, container,false)
+
+        Snackbar.make(bind.root, R.string.message_action_success, Snackbar.LENGTH_LONG)
+            .setAction("Volver") { activity?.finish() }
+            .show()
         return bind.root
     }
 
     companion object {
-        private lateinit var component:Component
+        private lateinit var component: Component
         @JvmStatic
-        final val TAG = "Button"
-
+        final val TAG = "Snackbar"
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ButtonFragment().apply {
+            SnackbarFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
         fun getInstance():Component{
-            component=  Component()
-            component.name=TAG
-            component.photoRes= R.drawable.img_button
-            component.type=Constants.SCROLL
+           component =  Component()
+           component.name= TAG
+           component.photoRes= R.drawable.img_singleline_action
+            component.type= Constants.STATIC
             return component
         }
     }
-
-
 }

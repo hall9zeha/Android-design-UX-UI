@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.barryzeha.materialdesignAndComponent.R;
 import com.barryzeha.materialdesignAndComponent.databinding.ItemComponentBinding;
 import com.barryzeha.materialdesignAndComponent.utils.Component;
 import com.barryzeha.materialdesignAndComponent.utils.OnClickListener;
@@ -60,8 +61,8 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
             bind.getRoot().setOnClickListener(v->{
                 listener.onClick(component);
             });
-            bind.ivComponent.setBackgroundResource(component.getPhotoRes());
-            bind.ivComponent.setScaleType(ImageView.ScaleType.CENTER);
+            bind.ivComponent.setImageResource(component.getPhotoRes());
+
             bind.tvName.setText(component.getName());
 
         }
