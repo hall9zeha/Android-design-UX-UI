@@ -2,7 +2,8 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-android:id="@+id/cvComponent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvComponent"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp">
@@ -10,6 +11,8 @@ android:id="@+id/cvComponent"
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_img_height"
         android:id="@+id/ivComponent"
+        android:scaleType="centerInside"
+        tools:src="@drawable/img_button"
         />
     <TextView
         android:layout_width="match_parent"

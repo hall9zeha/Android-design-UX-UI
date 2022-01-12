@@ -3,6 +3,7 @@ package com.barryzeha.materialdesignAndComponent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.barryzeha.materialdesignAndComponent.adapters.ComponentAdapter
 import com.barryzeha.materialdesignAndComponent.databinding.ActivityMainBinding
 import com.barryzeha.materialdesignAndComponent.utils.Component
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
 
     private fun setUpComponentAdapter(){
         adapter= ComponentAdapter(ArrayList(), this)
+        adapter.add(ButtonFragment.getInstance())
         bind.rvComponents.adapter = adapter
     }
 
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity() , OnClickListener{
                 Constants.SCROLL->intent= Intent(this,ScrollActivity::class.java)
                 Constants.STATIC->intent= Intent(this,StaticActivity::class.java)
             }
-        intent?.putExtra(Constants.NAME_ARG,components?.name)
+        intent?.putExtra(Constants.NAME_ARG,components!!.name)
+
         startActivity(intent)
     }
 }

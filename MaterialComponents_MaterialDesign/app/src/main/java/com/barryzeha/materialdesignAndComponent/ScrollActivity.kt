@@ -2,6 +2,7 @@ package com.barryzeha.materialdesignAndComponent
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -19,17 +20,11 @@ class ScrollActivity : AppCompatActivity() {
 
         binding = ActivityScrollBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-
-        }
 
     var nameFragment:String? = null;
-        if(savedInstanceState !=null){
+        if(savedInstanceState ==null){
             nameFragment= intent.getStringExtra(Constants.NAME_ARG);
             CommonUtils.setFragment(this, nameFragment, R.id.scroll_content)
 
@@ -38,6 +33,13 @@ class ScrollActivity : AppCompatActivity() {
         if(actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true)
             actionBar.title = nameFragment
+
+        }
+        binding.toolbar.title = nameFragment
+        binding.fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+
         }
     }
 

@@ -2,6 +2,8 @@ package com.barryzeha.materialdesignAndComponent.adapters;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,7 +41,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.setUpClickListener(mListener, components.get(position));
+        holder.onBind(mListener, components.get(position));
     }
 
     @Override
@@ -54,10 +56,14 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
             this.bind=itemView;
 
         }
-        void setUpClickListener(OnClickListener listener, Component component){
+        void onBind(OnClickListener listener, Component component){
             bind.getRoot().setOnClickListener(v->{
                 listener.onClick(component);
             });
+            bind.ivComponent.setBackgroundResource(component.getPhotoRes());
+            bind.ivComponent.setScaleType(ImageView.ScaleType.CENTER);
+            bind.tvName.setText(component.getName());
+
         }
     }
 }

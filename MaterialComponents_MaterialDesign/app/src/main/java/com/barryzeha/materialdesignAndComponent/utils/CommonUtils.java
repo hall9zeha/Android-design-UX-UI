@@ -3,6 +3,9 @@ package com.barryzeha.materialdesignAndComponent.utils;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.barryzeha.materialdesignAndComponent.ButtonFragment;
+
+
 public class CommonUtils {
 
     public static void setFragment(AppCompatActivity activity, String nameFragment, int contentRes){
@@ -15,6 +18,9 @@ public class CommonUtils {
     private static Fragment getFragmentById(String name) {
         Fragment fragment=null;
         switch (name){
+            case "Button":
+                fragment= new ButtonFragment();
+                break;
 
         }
         return fragment;
