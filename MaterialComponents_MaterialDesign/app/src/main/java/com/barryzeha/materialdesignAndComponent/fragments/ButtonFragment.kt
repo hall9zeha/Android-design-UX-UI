@@ -1,4 +1,4 @@
-package com.barryzeha.materialdesignAndComponent
+package com.barryzeha.materialdesignAndComponent.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.barryzeha.materialdesignAndComponent.R
 import com.barryzeha.materialdesignAndComponent.databinding.FragmentButtonBinding
 import com.barryzeha.materialdesignAndComponent.utils.Component
 import com.barryzeha.materialdesignAndComponent.utils.Constants
@@ -69,7 +70,7 @@ class ButtonFragment : Fragment() {
         fun getInstance():Component{
             component=  Component()
             component.name=TAG
-            component.photoRes=R.drawable.img_button
+            component.photoRes= R.drawable.img_button
             component.type=Constants.SCROLL
             return component
         }

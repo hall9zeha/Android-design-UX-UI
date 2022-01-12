@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Toast
 import com.barryzeha.materialdesignAndComponent.adapters.ComponentAdapter
 import com.barryzeha.materialdesignAndComponent.databinding.ActivityMainBinding
+import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment
+import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment
 import com.barryzeha.materialdesignAndComponent.utils.Component
 import com.barryzeha.materialdesignAndComponent.utils.Constants
 import com.barryzeha.materialdesignAndComponent.utils.OnClickListener
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
     private fun setUpComponentAdapter(){
         adapter= ComponentAdapter(ArrayList(), this)
         adapter.add(ButtonFragment.getInstance())
+        adapter.add(BottomNavigationBarFragment.getInstance())
         bind.rvComponents.adapter = adapter
     }
 

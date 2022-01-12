@@ -3,7 +3,8 @@ package com.barryzeha.materialdesignAndComponent.utils;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.barryzeha.materialdesignAndComponent.ButtonFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
 
 
 public class CommonUtils {
@@ -20,6 +21,9 @@ public class CommonUtils {
         switch (name){
             case "Button":
                 fragment= new ButtonFragment();
+                break;
+            case  "Bottom Navigation":
+                fragment= new BottomNavigationBarFragment();
                 break;
 
         }

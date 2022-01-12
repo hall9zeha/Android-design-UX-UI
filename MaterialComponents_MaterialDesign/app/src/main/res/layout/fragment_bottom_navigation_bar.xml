@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BottomNavigationBarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/bnvMain"
+       android:layout_gravity="bottom"
+       app:menu="@menu/menu_bottom_navigation"
+
+       app:itemIconTint="@drawable/item_color_ckecked_unchecked"
+       app:itemTextColor="@drawable/item_color_ckecked_unchecked"/>
+       <!--o solamente color de background
+       android:background="@android:color/holo_blue_bright"-->
+
+       <!--con esto podemos invertir los colores de los iconos al backgroun y agregarle el del sistema
+       style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+       />-->
+
+
+</FrameLayout>

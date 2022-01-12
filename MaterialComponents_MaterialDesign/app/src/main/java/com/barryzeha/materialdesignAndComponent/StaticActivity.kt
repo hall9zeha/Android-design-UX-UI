@@ -31,7 +31,7 @@ class StaticActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
         var nameFragment:String? = null;
-        if(savedInstanceState !=null){
+        if(savedInstanceState ==null){
             nameFragment= intent.getStringExtra(Constants.NAME_ARG);
             CommonUtils.setFragment(this, nameFragment, R.id.static_content)
 
