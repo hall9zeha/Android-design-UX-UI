@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentMainFab"
+    tools:context=".fragments.FloatingActionButtonFragment">
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/guidelineFab"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.75"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabDefault"
+        android:src="@drawable/ic_add"
+
+        android:layout_margin="@dimen/common_padding_default"
+        app:layout_constraintStart_toEndOf="@id/guidelineFab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFabDefault"
+        android:text="@string/status_default"
+        app:layout_constraintEnd_toStartOf="@id/guidelineFab"
+        app:layout_constraintTop_toTopOf="@id/fabDefault"
+        app:layout_constraintBottom_toBottomOf="@id/fabDefault"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabLegacy"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_margin="@dimen/common_padding_default"
+        app:layout_constraintStart_toEndOf="@id/guidelineFab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fabDefault"
+        style="@style/Widget.Design.FloatingActionButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFabLegacy"
+        android:text="@string/status_legacy_style"
+        app:layout_constraintEnd_toStartOf="@id/guidelineFab"
+        app:layout_constraintTop_toTopOf="@id/fabLegacy"
+        app:layout_constraintBottom_toBottomOf="@id/fabLegacy"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabCustom"
+        android:src="@drawable/ic_zoom"
+        app:tint="@android:color/holo_orange_light"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        app:maxImageSize="40dp"
+        app:rippleColor="@android:color/holo_red_light"
+        app:borderWidth="4dp"
+        app:elevation="16dp"
+
+        android:layout_margin="@dimen/common_padding_default"
+        app:layout_constraintStart_toEndOf="@id/guidelineFab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fabLegacy"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFabCustom"
+        android:text="@string/status_custom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineFab"
+        app:layout_constraintTop_toTopOf="@id/fabCustom"
+        app:layout_constraintBottom_toBottomOf="@id/fabCustom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

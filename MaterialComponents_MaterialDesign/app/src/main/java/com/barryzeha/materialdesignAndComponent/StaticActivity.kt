@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.barryzeha.materialdesignAndComponent.databinding.ActivityStaticBinding
+
 import com.barryzeha.materialdesignAndComponent.utils.CommonUtils
 import com.barryzeha.materialdesignAndComponent.utils.Constants
 
@@ -26,10 +27,7 @@ class StaticActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+
         var nameFragment:String? = null;
         if(savedInstanceState ==null){
             nameFragment= intent.getStringExtra(Constants.NAME_ARG);
