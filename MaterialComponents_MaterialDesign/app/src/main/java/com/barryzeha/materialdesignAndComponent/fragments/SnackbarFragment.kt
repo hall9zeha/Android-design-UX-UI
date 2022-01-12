@@ -48,6 +48,14 @@ class SnackbarFragment : Fragment() {
         private lateinit var component: Component
         @JvmStatic
         final val TAG = "Snackbar"
+
+        fun getInstance():Component{
+           component =  Component()
+           component.name= TAG
+           component.photoRes= R.drawable.img_singleline_action
+            component.type= Constants.STATIC
+            return component
+        }
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             SnackbarFragment().apply {
@@ -56,12 +64,5 @@ class SnackbarFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
-        fun getInstance():Component{
-           component =  Component()
-           component.name= TAG
-           component.photoRes= R.drawable.img_singleline_action
-            component.type= Constants.STATIC
-            return component
-        }
     }
 }

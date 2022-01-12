@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SnackbarFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.TextFieldFragment;
 
 
 public class CommonUtils {
@@ -28,6 +29,9 @@ public class CommonUtils {
                 break;
             case  "Snackbar":
                 fragment= new SnackbarFragment();
+                break;
+            case  "TextField":
+                fragment= new TextFieldFragment();
                 break;
 
         }
