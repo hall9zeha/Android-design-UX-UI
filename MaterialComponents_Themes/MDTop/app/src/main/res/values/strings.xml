@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MD Top</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="label_dialog_add">Añadir</string>
+    <string name="label_dialog_cancel">Cancelar</string>
+    <string name="label_dialog_delete">Eliminar</string>
+
+    <string name="artist_hint_nombre">Nombre</string>
+    <string name="artist_hint_orden">Orden</string>
+    <string name="artist_hint_apellidos">Apellidos</string>
+    <string name="artist_hint_fechaNacimiento">Fecha de nacimiento</string>
+    <string name="artist_hint_edad">Edad</string>
+    <string name="artist_hint_estatura">Estatura(cm)</string>
+    <string name="artist_hint_lugarNacimiento">Lugar de nacimiento</string>
+    <string name="artist_hint_notas">Notas</string>
+
+    <string name="addArtist_dialogUrl_title">Añadir foto desde una URL</string>
+    <string name="addArtist_error_estaturaMin">La estatura minima debe ser 50cm</string>
+    <string name="addArtist_error_required">Este campo es requerido</string>
+
+    <string name="detalle_title">Detalle</string>
+    <string name="detalle_message_update_success">Datos almacenados correctamente</string>
+    <string name="detalle_message_update_fail">No se pudieron actualizar los datos, estamos trabajando en ello.</string>
+    <string name="detalle_chooser_title">Selecione uno</string>
+    <string name="detalle_dialogDelete_title">Eliminar foto</string>
+    <string name="detalle_dialogDelete_message">¿Esta seguro de querer eliminar la foto de %s?</string>
+
+    <string name="main_dialogDelete_title">Eliminar artista</string>
+    <string name="main_dialogDelete_message">¿Estas seguro de que deseas eliminar a %s?\nSe eliminará permanentemente.</string>
+    <string name="main_message_delete_success">Artista eliminado correctamente.</string>
+    <string name="main_message_delete_fail">El artista no ha sido eliminado correctamente.</string>
+</resources>

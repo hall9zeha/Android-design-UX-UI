@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="@dimen/img_item_size"
+            android:layout_height="@dimen/img_item_size"
+            android:src="@drawable/ic_account_box"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist_hint_nombre"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="@dimen/main_padding_small"
+            android:layout_toEndOf="@id/imgFoto"
+            android:layout_toStartOf="@+id/tvOrden"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist_hint_orden"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="@dimen/main_padding_small"
+            android:drawableBottom="@drawable/ic_star"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
