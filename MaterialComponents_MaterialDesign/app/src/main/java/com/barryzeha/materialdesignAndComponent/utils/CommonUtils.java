@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 
 import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.CheckboxFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.FloatingActionButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SnackbarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.TextFieldFragment;
@@ -36,6 +37,9 @@ public class CommonUtils {
                 break;
             case "FloatingActionButton":
                 fragment=new FloatingActionButtonFragment();
+                break;
+            case "Checkbox":
+                fragment=new CheckboxFragment();
                 break;
 
         }

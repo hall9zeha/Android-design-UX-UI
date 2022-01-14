@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(SnackbarFragment.getInstance())
         adapter.add(TextFieldFragment.getInstance())
         adapter.add(FloatingActionButtonFragment.getInstance())
+        adapter.add(CheckboxFragment.getInstance())
         bind.rvComponents.adapter = adapter
     }
 
