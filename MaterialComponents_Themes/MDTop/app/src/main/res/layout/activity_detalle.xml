@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
         android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        >
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
@@ -32,7 +32,7 @@
                     android:id="@+id/imgFoto"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/app_bar_height"
-                    android:background="@android:color/darker_gray"
+                 android:background="@android:color/transparent"
                     android:src="@drawable/ic_photo_size_select_actual"/>
 
                 <LinearLayout
@@ -43,15 +43,15 @@
                     android:layout_marginTop="?attr/actionBarSize">
 
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgDeleteFoto"
                         android:src="@drawable/ic_close_box"/>
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgFromGallery"
                         android:src="@drawable/ic_image"/>
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgFromUrl"
                         android:src="@drawable/ic_earth_box"/>
                 </LinearLayout>
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                style="?toolbarStyle"/>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MD Top</string>
-    <string name="action_settings">Settings</string>
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
 
     <string name="label_dialog_add">Añadir</string>
     <string name="label_dialog_cancel">Cancelar</string>
@@ -30,4 +31,6 @@
     <string name="main_dialogDelete_message">¿Estas seguro de que deseas eliminar a %s?\nSe eliminará permanentemente.</string>
     <string name="main_message_delete_success">Artista eliminado correctamente.</string>
     <string name="main_message_delete_fail">El artista no ha sido eliminado correctamente.</string>
+    <string name="add_artist_title">Añadir artista</string>
+    <string name="text_required">Requerido</string>
 </resources>

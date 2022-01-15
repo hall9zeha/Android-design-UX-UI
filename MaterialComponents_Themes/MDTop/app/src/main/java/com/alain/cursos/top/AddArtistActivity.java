@@ -62,6 +62,7 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
     }
 
     private void configActionBar() {
+        setSupportActionBar(bind.toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -126,19 +127,30 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
 
         if (bind.etEstatura.getText() != null && (bind.etEstatura.getText().toString().trim().isEmpty() ||
                 Integer.valueOf(bind.etEstatura.getText().toString().trim()) < getResources().getInteger(R.integer.estatura_min)) ) {
-            bind.etEstatura.setError(getString(R.string.addArtist_error_estaturaMin));
-            bind.etEstatura.requestFocus();
+            bind.tilHeight.setError(getString(R.string.addArtist_error_estaturaMin));
+            bind.tilHeight.requestFocus();
             isValid = false;
+        }
+        else{
+            bind.tilHeight.setError(null);
         }
         if (bind.etApellidos.getText() != null && bind.etApellidos.getText().toString().trim().isEmpty()) {
-            bind.etApellidos.setError(getString(R.string.addArtist_error_required));
-            bind.etApellidos.requestFocus();
+            bind.tilLastNames.setError(getString(R.string.addArtist_error_required));
+            bind.tilLastNames.requestFocus();
             isValid = false;
         }
+        else{
+            bind.tilLastNames.setError(null);
+        }
         if (bind.etNombre.getText() != null && bind.etNombre.getText().toString().trim().isEmpty()) {
-            bind.etNombre.setError(getString(R.string.addArtist_error_required));
-            bind.etNombre.requestFocus();
+           /* bind.etNombre.setError(getString(R.string.addArtist_error_required));
+            bind.etNombre.requestFocus();*/
+            bind.tilName.setError(getString(R.string.addArtist_error_required));
+            bind.tilName.requestFocus();
             isValid = false;
+        }
+        else{
+            bind.tilName.setError(null);
         }
 
         return isValid;

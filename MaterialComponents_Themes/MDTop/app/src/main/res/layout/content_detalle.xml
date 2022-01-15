@@ -17,12 +17,17 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            style="@style/MyTheme.DayNight.TextFields"
+            app:helperText="@string/text_required"
+            android:id="@+id/tilName"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            android:hint="@string/artist_hint_nombre">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/artist_hint_nombre"
+
                 android:inputType="textPersonName|textCapWords"
                 android:maxLength="@integer/nombre_maxLenght"
                 android:enabled="false"/>
@@ -30,12 +35,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/tilLastNames"
+            style="@style/MyTheme.DayNight.TextFields"
+            app:helperText="@string/text_required"
+
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            android:hint="@string/artist_hint_apellidos">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/artist_hint_apellidos"
+
                 android:inputType="textPersonName|textCapWords"
                 android:maxLength="@integer/nombre_maxLenght"
                 android:enabled="false"/>
@@ -50,12 +61,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:hint="@string/artist_hint_fechaNacimiento"
+                style="@style/MyTheme.DayNight.TextFields"
+                android:layout_marginEnd="@dimen/main_padding_medium"
+                app:startIconDrawable="@drawable/ic_calendar"
                 android:layout_weight="50">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etFechaNacimiento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/artist_hint_fechaNacimiento"
+
                     android:enabled="false"
                     android:focusableInTouchMode="false"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -63,12 +78,15 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:hint="@string/artist_hint_edad"
+                style="@style/MyTheme.DayNight.TextFields"
+                android:layout_marginStart="@dimen/main_padding_medium"
                 android:layout_weight="50">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEdad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/artist_hint_edad"
+
                     android:inputType="number"
                     android:maxLength="@integer/estatura_maxLenght"
                     android:enabled="false"/>
@@ -84,12 +102,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/tilHeight"
+                style="@style/MyTheme.DayNight.TextFields"
+                android:layout_marginEnd="@dimen/main_padding_medium"
+                android:hint="@string/artist_hint_estatura"
                 android:layout_weight="50">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEstatura"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/artist_hint_estatura"
+
                     android:inputType="number"
                     android:maxLength="@integer/estatura_maxLenght"
                     android:enabled="false"/>
@@ -98,12 +120,15 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:hint="@string/artist_hint_orden"
+                style="@style/MyTheme.DayNight.TextFields"
+                android:layout_marginStart="@dimen/main_padding_medium"
                 android:layout_weight="50">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etOrden"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/artist_hint_orden"
+
                     android:enabled="false"
                     android:focusableInTouchMode="false"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -112,12 +137,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            style="@style/MyTheme.DayNight.TextFields"
+
+            app:startIconDrawable="@drawable/ic_baseline_place_24"
+            android:hint="@string/artist_hint_lugarNacimiento">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etLugarNacimiento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/artist_hint_lugarNacimiento"
+
                 android:inputType="textAutoComplete"
                 android:maxLength="@integer/lugarNacimiento_maxLenght"
                 android:enabled="false"/>
@@ -125,12 +154,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/item_padding_vertical"
+            style="@style/MyTheme.DayNight.TextFields"
+            android:hint="@string/artist_hint_notas">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNotas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/artist_hint_notas"
+
                 android:gravity="top|start"
                 android:inputType="textMultiLine"
                 android:maxLength="@integer/notas_maxLenght"

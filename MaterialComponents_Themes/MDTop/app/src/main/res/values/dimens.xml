@@ -1,10 +1,16 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="main_padding_small">4dp</dimen>
-    <dimen name="img_item_size">80dp</dimen>
+    <dimen name="img_item_size">40dp</dimen>
     <dimen name="app_bar_height">220dp</dimen>
     <dimen name="imageView_margin">2dp</dimen>
     <dimen name="imageView_inset">-4dp</dimen>
     <dimen name="imageView_radius">18dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_height_tree_lines">88dp</dimen>
+    <dimen name="item_height_padding_top">16dp</dimen>
+    <dimen name="item_padding_horizontal">16dp</dimen>
+    <dimen name="item_text_size_secondary">12sp</dimen>
+    <dimen name="item_padding_vertical">16dp</dimen>
+    <dimen name="main_padding_medium">8dp</dimen>
 </resources>

@@ -182,6 +182,10 @@ public class DetalleActivity extends AppCompatActivity implements DatePickerDial
                     configTitle();
                     showMessage(R.string.detalle_message_update_success);
                     Log.i("DBFlow", "Inserción correcta de datos.");
+                    bind.fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_account_edit));
+                    enableUIElements(false);
+                    mIsEdit = false;
+
                 } catch (Exception e) {
                     e.printStackTrace();
                     showMessage(R.string.detalle_message_update_fail);
@@ -189,9 +193,7 @@ public class DetalleActivity extends AppCompatActivity implements DatePickerDial
                 }
             }
 
-            bind.fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_account_edit));
-            enableUIElements(false);
-            mIsEdit = false;
+
         } else {
             mIsEdit = true;
             bind.fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_account_check));
@@ -204,21 +206,30 @@ public class DetalleActivity extends AppCompatActivity implements DatePickerDial
 
         if (bind.content.etEstatura.getText() != null && (bind.content.etEstatura.getText().toString().trim().isEmpty() ||
                 Integer.valueOf(bind.content.etEstatura.getText().toString().trim()) < getResources().getInteger(R.integer.estatura_min)) ) {
-            bind.content.etEstatura.setError(getString(R.string.addArtist_error_estaturaMin));
-            bind.content.etEstatura.requestFocus();
+            bind.content.tilHeight.setError(getString(R.string.addArtist_error_estaturaMin));
+            bind.content.tilHeight.requestFocus();
             isValid = false;
+        }
+        else{
+            bind.content.tilHeight.setError(null);
+
         }
         if (bind.content.etApellidos.getText() != null && bind.content.etApellidos.getText().toString().trim().isEmpty()) {
-            bind.content.etApellidos.setError(getString(R.string.addArtist_error_required));
-            bind.content.etApellidos.requestFocus();
+            bind.content.tilLastNames.setError(getString(R.string.addArtist_error_required));
+            bind.content.tilLastNames.requestFocus();
             isValid = false;
+        }
+        else{
+            bind.content.tilLastNames.setError(null);
         }
         if (bind.content.etNombre.getText() != null && bind.content.etNombre.getText().toString().trim().isEmpty()) {
-            bind.content.etNombre.setError(getString(R.string.addArtist_error_required));
-            bind.content.etNombre.requestFocus();
+            bind.content.tilName.setError(getString(R.string.addArtist_error_required));
+            bind.content.tilName.requestFocus();
             isValid = false;
         }
-
+        else{
+            bind.content.tilName.setError(null);
+        }
         return isValid;
     }
 
@@ -229,7 +240,9 @@ public class DetalleActivity extends AppCompatActivity implements DatePickerDial
         bind.content.etEstatura.setEnabled(enable);
         bind.content.etLugarNacimiento.setEnabled(enable);
         bind.content.etNotas.setEnabled(enable);
-
+        bind.content.tilName.clearFocus();
+        bind.content.tilHeight.clearFocus();
+        bind.content.tilLastNames.clearFocus();
         mMenuItem.setVisible(enable);
         bind.appBar.setExpanded(!enable);
         bind.content.containerMain.setNestedScrollingEnabled(!enable);

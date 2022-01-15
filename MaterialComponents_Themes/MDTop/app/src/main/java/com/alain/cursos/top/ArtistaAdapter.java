@@ -57,6 +57,7 @@ public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHold
         holder.setListener(artista, listener);
 
         holder.bind.tvNombre.setText(artista.getNombreCompleto());
+        holder.bind.tvNote.setText(artista.getNotas());
         holder.bind.tvOrden.setText(String.valueOf(position+1));
 
         if (artista.getFotoUrl() != null){
