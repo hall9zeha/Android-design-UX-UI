@@ -79,6 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/artist_hint_nombre"
+
                 android:inputType="textPersonName|textCapWords"
                 android:maxLength="@integer/nombre_maxLenght"/>
         </com.google.android.material.textfield.TextInputLayout>

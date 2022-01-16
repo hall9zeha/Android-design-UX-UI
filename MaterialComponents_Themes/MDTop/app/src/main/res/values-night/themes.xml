@@ -26,7 +26,8 @@
     <style name="Base.Materialtheme"  parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">?colorPrimaryVariant</item>
         <item name="android:navigationBarColor">?android:colorBackground</item>
-        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
         <item name="android:navigationBarDividerColor" tools:ignore="NewApi">?colorControlHighlight</item>
     </style>
     <style name="ItemLarge" parent="TextAppearance.MaterialComponents.Subtitle1">

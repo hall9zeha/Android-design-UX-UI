@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-night/ic_account_edit.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable-night/ic_check.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable-night/ic_star.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/background_image_button.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_account_box.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_account_check.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_account_edit.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_account_plus.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_baseline_place_24.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_calendar.xml" value="0.18703703703703703" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.18703703703703703" />
         <entry key="app/src/main/res/layout/activity_add_artist.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/activity_detalle.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17760416666666667" />
