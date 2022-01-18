@@ -108,7 +108,7 @@
                 android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-
+                app:layout_constraintTop_toBottomOf="@id/chipGroupLarge"
                 android:layout_marginBottom="8dp"
                 style="@style/Widget.MaterialComponents.Button.TextButton"/>
             <TextView
@@ -157,7 +157,7 @@
                 android:id="@+id/divider"
                 app:layout_constraintStart_toStartOf="@id/tvTitleLarge"
                 app:layout_constraintEnd_toEndOf="@id/tvTitleLarge"
-                app:layout_constraintBottom_toBottomOf="@id/tvMessageLarge"
+                app:layout_constraintTop_toBottomOf="@id/tvMessageLarge"
                 android:layout_marginTop="24dp"/>
             <TextView
                 android:layout_width="0dp"
@@ -165,10 +165,54 @@
                 android:id="@+id/tvSubtitleLarge"
                 android:text="@string/card_subtitle_demo"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:firstBaselineToTopHeight="36dp"
+                app:firstBaselineToTopHeight="36dp"
                 app:layout_constraintStart_toStartOf="@id/tvTitleLarge"
                 app:layout_constraintEnd_toEndOf="@id/tvTitleLarge"
                 app:layout_constraintTop_toBottomOf="@id/divider"/>
+            <com.google.android.material.chip.ChipGroup
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipGroupLarge"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp"
+
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleLarge"
+                app:layout_constraintStart_toStartOf="@id/tvSubtitleLarge"
+                app:layout_constraintEnd_toEndOf="@id/tvSubtitleLarge"
+                app:layout_constraintBottom_toTopOf="@id/btnLargeFirst">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipIndividual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipStrokeColor="@color/purple_500"
+                    app:chipStrokeWidth="2dp"
+                    app:chipBackgroundColor="@android:color/transparent"
+                    app:rippleColor="@color/teal_200"
+                    app:chipIcon="@mipmap/ic_launcher"
+                    android:text="Chip individual"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:closeIconEnabled="true"
+
+                    android:text="Chip close"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCheckable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+
+                    android:text="Chip selectable"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCheckableCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    app:checkedIcon="@drawable/ic_favorite"
+                    android:text="Chip selectable custom"/>
+            </com.google.android.material.chip.ChipGroup>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
