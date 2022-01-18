@@ -1,6 +1,8 @@
 package com.barryzeha.materialdesignAndComponent
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +43,10 @@ class StaticActivity : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        var inflateMenu=menuInflater.inflate(R.menu.menu_bottom_navigation, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId==android.R.id.home){
             finish()

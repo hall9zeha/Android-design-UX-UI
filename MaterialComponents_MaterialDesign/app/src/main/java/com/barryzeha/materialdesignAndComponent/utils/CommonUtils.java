@@ -8,6 +8,7 @@ import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CardFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CheckboxFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.FloatingActionButtonFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.MenuFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SnackbarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.TextFieldFragment;
 
@@ -44,6 +45,9 @@ public class CommonUtils {
                 break;
             case "Card":
                 fragment= new CardFragment();
+                break;
+            case "Menu":
+                fragment=new MenuFragment();
                 break;
 
         }

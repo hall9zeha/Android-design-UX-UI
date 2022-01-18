@@ -14,6 +14,7 @@ import com.barryzeha.materialdesignAndComponent.utils.Component;
 import com.barryzeha.materialdesignAndComponent.utils.OnClickListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.ViewHolder>{
     private ArrayList<Component> components= new ArrayList();
@@ -48,6 +49,11 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
     @Override
     public int getItemCount() {
         return  (int) components.size()>0 ? components.size() : 0;
+    }
+
+    public void reverse() {
+        Collections.reverse(components);
+        notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

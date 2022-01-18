@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
 
     private fun setUpComponentAdapter(){
         adapter= ComponentAdapter(ArrayList(), this)
+        bind.rvComponents.adapter = adapter
         adapter.add(ButtonFragment.getInstance())
         adapter.add(BottomNavigationBarFragment.getInstance())
         adapter.add(SnackbarFragment.getInstance())
@@ -30,7 +31,10 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(FloatingActionButtonFragment.getInstance())
         adapter.add(CheckboxFragment.getInstance())
         adapter.add(CardFragment.getInstance())
-        bind.rvComponents.adapter = adapter
+        adapter.add(MenuFragment.getInstance())
+        adapter.reverse()
+
+
     }
 
     override fun onClick(components: Component?) {
