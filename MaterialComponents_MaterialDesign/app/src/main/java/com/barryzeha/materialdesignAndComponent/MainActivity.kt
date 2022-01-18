@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(CheckboxFragment.getInstance())
         adapter.add(CardFragment.getInstance())
         adapter.add(MenuFragment.getInstance())
+        adapter.add(AlertDialogFragment.getInstance())
         adapter.reverse()
 
 

@@ -37,5 +37,8 @@
     <style name="Theme.MaterialDesign.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MaterialDesign.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="myDialogStyle" parent ="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
 
+    </style>
 </resources>

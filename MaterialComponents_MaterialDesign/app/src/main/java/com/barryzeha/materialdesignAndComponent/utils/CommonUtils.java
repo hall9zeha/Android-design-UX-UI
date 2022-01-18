@@ -3,6 +3,7 @@ package com.barryzeha.materialdesignAndComponent.utils;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.barryzeha.materialdesignAndComponent.fragments.AlertDialogFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CardFragment;
@@ -48,6 +49,9 @@ public class CommonUtils {
                 break;
             case "Menu":
                 fragment=new MenuFragment();
+                break;
+            case "Dialog":
+                fragment=new AlertDialogFragment();
                 break;
 
         }
