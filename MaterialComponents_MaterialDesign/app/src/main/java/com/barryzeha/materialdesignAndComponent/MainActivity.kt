@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(TextFieldFragment.getInstance())
         adapter.add(FloatingActionButtonFragment.getInstance())
         adapter.add(CheckboxFragment.getInstance())
+        adapter.add(CardFragment.getInstance())
         bind.rvComponents.adapter = adapter
     }
 
