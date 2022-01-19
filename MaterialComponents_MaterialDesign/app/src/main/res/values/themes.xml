@@ -16,6 +16,7 @@
         <!--  <item name="actionBarStyle">@style/MyToolbarStyle</item>-->
 
         <!-- Customize your theme here. -->
+        <item name="shapeAppearanceSmallComponent">@style/myTheme.Smallcomponents</item>
     </style>
 
     <style name="MyToolbarStyle" parent="Widget.MaterialComponents.ActionBar.Solid">
@@ -40,5 +41,8 @@
     <style name="myDialogStyle" parent ="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
 
+    </style>
+    <style name="fullScreenPicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:windowIsFloating">false</item>
     </style>
 </resources>

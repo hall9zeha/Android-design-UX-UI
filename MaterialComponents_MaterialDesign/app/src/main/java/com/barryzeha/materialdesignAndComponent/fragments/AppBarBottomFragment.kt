@@ -9,7 +9,9 @@ import android.widget.Toolbar
 import androidx.fragment.app.DialogFragment
 import com.barryzeha.materialdesignAndComponent.R
 import com.barryzeha.materialdesignAndComponent.databinding.FragmentAppBarBottomBinding
+import com.barryzeha.materialdesignAndComponent.utils.BottomAppBarCutCornersTopEdge
 import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.snackbar.Snackbar
 
 private const val ARG_PARAM1 = "param1"
@@ -59,6 +61,19 @@ class AppBarBottomFragment : DialogFragment() {
             Snackbar.make(bind.root,"acción de icon navigation",Snackbar.LENGTH_LONG).setAnchorView(
                 bind.fab).show()
         }
+        //instanciamos la clase que convertira nuetro appBarBottom con espacios tipo diamante para el encaje
+        //de nuestro fab que ahora es con bordes cortados
+        var topEdge=BottomAppBarCutCornersTopEdge(
+            bind.appBarBottom.fabCradleMargin,
+            bind.appBarBottom.fabCradleRoundedCornerRadius,
+            bind.appBarBottom.cradleVerticalOffset
+        )
+        var shapeDrawable=bind.appBarBottom.background as MaterialShapeDrawable
+        shapeDrawable.shapeAppearanceModel=shapeDrawable.shapeAppearanceModel
+            .toBuilder()
+            .setTopEdge(topEdge)
+            .build()
+
         return bind.root
     }
 
