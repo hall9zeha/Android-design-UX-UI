@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(CardFragment.getInstance())
         adapter.add(MenuFragment.getInstance())
         adapter.add(AlertDialogFragment.getInstance())
+        adapter.add(AppBarFragment.getInstance())
         adapter.reverse()
 
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.barryzeha.materialdesignAndComponent.fragments.AlertDialogFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.AppBarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.BottomNavigationBarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.ButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CardFragment;
@@ -52,6 +53,9 @@ public class CommonUtils {
                 break;
             case "Dialog":
                 fragment=new AlertDialogFragment();
+                break;
+            case "AppBar":
+                fragment= new AppBarFragment();
                 break;
 
         }
