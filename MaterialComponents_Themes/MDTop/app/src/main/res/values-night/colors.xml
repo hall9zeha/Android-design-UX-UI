@@ -22,5 +22,6 @@
     <color name="surface_color">#ffffff</color>
     <color name="red_A700">#d50000</color>
     <color name="color_error_night">#ff8a80</color>
+    <color name="collapsing_toolbar_color">@color/surface</color>
 
 </resources>

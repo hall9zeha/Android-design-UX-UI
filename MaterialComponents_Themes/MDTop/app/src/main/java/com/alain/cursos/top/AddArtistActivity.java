@@ -29,6 +29,8 @@ import com.alain.cursos.top.databinding.ActivityAddArtistBinding;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
+import com.google.android.material.datepicker.MaterialDatePicker;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.SimpleDateFormat;
@@ -36,7 +38,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 
-public class AddArtistActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, View.OnClickListener {
+public class AddArtistActivity extends AppCompatActivity implements  View.OnClickListener {
 
     private static final int RC_PHOTO_PICKER = 21;
 
@@ -168,32 +170,27 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
 
 
     public void onSetFecha() {
-        DialogSelectorFecha selectorFecha = new DialogSelectorFecha();
-        selectorFecha.setListener(AddArtistActivity.this);
 
-        Bundle args = new Bundle();
-        args.putLong(DialogSelectorFecha.FECHA, mArtista.getFechaNacimiento());
-        selectorFecha.setArguments(args);
-        selectorFecha.show(getSupportFragmentManager(), DialogSelectorFecha.SELECTED_DATE);
+        MaterialDatePicker.Builder<Long> builder=MaterialDatePicker.Builder.datePicker();
+        builder.setTheme(R.style.pickerDialogCut);
+        MaterialDatePicker<?> picker=builder.build();
+        picker.addOnPositiveButtonClickListener(selection->{
+            bind.etFechaNacimiento.setText(new SimpleDateFormat("dd/MM/yyyy", Locale.ROOT).format(
+                    selection));
+            mArtista.setFechaNacimiento((long)selection);
+        });
+        picker.show(getSupportFragmentManager(), picker.toString());
+
     }
 
-    @Override
-    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-        mCalendar.setTimeInMillis(System.currentTimeMillis());
-        mCalendar.set(Calendar.YEAR, year);
-        mCalendar.set(Calendar.MONTH, month);
-        mCalendar.set(Calendar.DAY_OF_MONTH, day);
-
-        bind.etFechaNacimiento.setText(new SimpleDateFormat("dd/MM/yyyy", Locale.ROOT).format(
-                mCalendar.getTimeInMillis()));
-        mArtista.setFechaNacimiento(mCalendar.getTimeInMillis());
-    }
 
 
     public void imageEvents(View view) {
         switch (view.getId()) {
             case R.id.imgDeleteFoto:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                //Probaremos el materialalertDialog
+                //AlertDialog.Builder builder = new AlertDialog.Builder(this)
+                MaterialAlertDialogBuilder builder= new MaterialAlertDialogBuilder(this)
                         .setTitle(R.string.detalle_dialogDelete_title)
                         .setMessage(String.format(Locale.ROOT,
                                 getString(R.string.detalle_dialogDelete_message),
@@ -218,7 +215,9 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
     private void showAddPhotoDialog() {
         final EditText etFotoUrl = new EditText(this);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this)
+        //Probaremos el materialalertDialog
+        //AlertDialog.Builder builder = new AlertDialog.Builder(this)
+        MaterialAlertDialogBuilder builder= new MaterialAlertDialogBuilder(this)
                 .setTitle(R.string.addArtist_dialogUrl_title)
                 .setPositiveButton(R.string.label_dialog_add, (dialogInterface, i)->
                         configImageView(etFotoUrl.getText().toString().trim()))

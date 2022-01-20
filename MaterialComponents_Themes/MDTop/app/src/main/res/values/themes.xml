@@ -21,7 +21,7 @@
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
-
+        <item name="materialAlertDialogTheme">@style/myMaterialAlertDialog</item>
     </style>
     <style name="Base.Materialtheme"  parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!--<item name="android:statusBarColor">?colorPrimaryVariant</item>-->
@@ -46,6 +46,11 @@
         <item name="android:layout_marginTop">@dimen/item_padding_horizontal</item>
 
     </style>
-
+    <style name="pickerDialogCut" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderLayout">@null</item>
+    </style>
+    <style name="myMaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/pink_700</item>
+    </style>
 
 </resources>

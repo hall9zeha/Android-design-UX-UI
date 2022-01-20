@@ -23,4 +23,6 @@
     <color name="red_A700">#d50000</color>
     <color name="color_error_night">#ff8a80</color>
 
+    <!--collapsingToolbarlayout-->
+    <color name="collapsing_toolbar_color">@color/pink_500</color>
 </resources>

@@ -47,6 +47,22 @@
         <item name="android:layout_marginTop">@dimen/item_padding_horizontal</item>
 
     </style>
+    <style name="pickerDialogCut" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderLayout">@null</item>
+        <item name="materialCalendarHeaderTitle">@style/myHeaderTitle</item>
+        <item name="materialCalendarHeaderSelection">@style/myHeaderSelection</item>
 
+        <item name="materialCalendarHeaderToggleButton">@style/myHeaderToggleButton</item>
+
+    </style>
+    <style name="myHeaderTitle" parent="Widget.MaterialComponents.MaterialCalendar.HeaderTitle">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="myHeaderSelection" parent="Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="myHeaderToggleButton" parent="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">?attr/colorOnSurface</item>
+    </style>
 
 </resources>
