@@ -64,5 +64,13 @@
     <style name="myHeaderToggleButton" parent="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
         <item name="android:tint">?attr/colorOnSurface</item>
     </style>
+    <style name="mySplashScreen" parent="Theme.MyTheme">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <!--no implementaré para las versiones 24 o menores porque no es necesario para esto-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
 
+    </style>
 </resources>
