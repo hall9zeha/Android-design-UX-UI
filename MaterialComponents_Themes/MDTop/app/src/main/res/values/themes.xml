@@ -52,5 +52,9 @@
     <style name="myMaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="colorPrimary">@color/pink_700</item>
     </style>
-
+    <style name="mySplashScreen" parent="Theme.MyTheme">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+    </style>
 </resources>

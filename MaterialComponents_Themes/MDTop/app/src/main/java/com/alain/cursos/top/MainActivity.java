@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
     }
 
     private void setUpTheme() {
+        setTheme(R.style.Theme_MyTheme);
         sharedPreferences=getPreferences(MODE_PRIVATE);
         isModeNight=sharedPreferences.getBoolean(SP_MODE_NIGHT,false);
         if(isModeNight){
