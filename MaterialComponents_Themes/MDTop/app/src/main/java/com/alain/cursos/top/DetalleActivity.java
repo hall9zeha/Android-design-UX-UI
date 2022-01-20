@@ -11,6 +11,7 @@ package com.alain.cursos.top;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -22,6 +23,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 
 import com.alain.cursos.top.databinding.ActivityDetalleBinding;
@@ -101,6 +103,25 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+        bind.toolbarLayout.setExpandedTitleColor(Color.WHITE);
+        bind.appBar.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
+        /*    if(Math.abs(verticalOffset)==appBarLayout.getTotalScrollRange()){
+                bind.toolbar.getNavigationIcon().setTint(Color.BLACK);
+            }
+            else{
+                bind.toolbar.getNavigationIcon().setTint(Color.WHITE);
+            }*/
+            if(AppCompatDelegate.getDefaultNightMode() !=AppCompatDelegate.MODE_NIGHT_YES) {
+                //probaremos cambiar el color progresivamente del ícono del toolbar al colapsar
+                //le ponemos negativo restando uno para que salga al revés ya que primero era 0 y colapsado era 1
+                //O sea cuando sea colapsado totalmente sea 0 y totalmente negro y expandido 1 y blanco
+                float percentage = Math.abs((float) Math.abs(verticalOffset) / appBarLayout.getTotalScrollRange() - 1);
+                int colorRgbValue = (int) (percentage * 255);
+                bind.toolbar.getNavigationIcon().setTint(Color.rgb(colorRgbValue, colorRgbValue, colorRgbValue));
+            }
+
+
+        });
         configTitle();
     }
 
@@ -139,9 +160,15 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_save) {
-            saveOrEdit();
+        switch(item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.action_save:
+                saveOrEdit();
+                break;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

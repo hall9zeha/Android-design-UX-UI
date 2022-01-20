@@ -31,11 +31,12 @@
         <activity
             android:name=".DetalleActivity"
             android:label="@string/detalle_title"
-            android:parentActivityName=".MainActivity"
+            >
+           <!-- android:parentActivityName=".MainActivity"
            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alain.cursos.top.MainActivity" />
+                android:value="com.alain.cursos.top.MainActivity" />-->
         </activity>
     </application>
 
