@@ -11,6 +11,7 @@ package com.alain.cursos.top;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
@@ -36,12 +37,16 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements OnItemClickListener {
 
 
+    private final String SP_MODE_NIGHT="spModeNight";
+    private SharedPreferences sharedPreferences;
+    private boolean isModeNight;
 
     private ArtistaAdapter adapter;
     private ActivityMainBinding bind;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setUpTheme();
         bind= ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(bind.getRoot());
 
@@ -52,6 +57,14 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         bind.fab.setOnClickListener(v->addArtist());
         if (SQLite.select().from(Artista.class).count() == 0) {
             generateArtist();
+        }
+    }
+
+    private void setUpTheme() {
+        sharedPreferences=getPreferences(MODE_PRIVATE);
+        isModeNight=sharedPreferences.getBoolean(SP_MODE_NIGHT,false);
+        if(isModeNight){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
     }
 
@@ -138,15 +151,22 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         switch(item.getItemId()){
             case R.id.light_theme:
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                isModeNight=false;
+
                 break;
             case R.id.dark_theme:
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                isModeNight=true;
+
                 break;
         }
         //noinspection SimplifiableIfStatement
         if (id == R.id.light_theme) {
             return true;
         }
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putBoolean(SP_MODE_NIGHT,isModeNight);
+        editor.apply();
 
         return super.onOptionsItemSelected(item);
     }
