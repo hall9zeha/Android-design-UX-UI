@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alain.cursos.top"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:6:5-67
+11-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:7:5-65
+12-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:7:22-63
+13
+14    <application
+14-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:9:5-40:19
+15        android:name="com.alain.cursos.top.MyApplication"
+15-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:10:9-38
+16        android:allowBackup="true"
+16-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:11:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.7.0] /home/kdelenovo/.gradle/caches/transforms-3/b5f9b856b96829664226d4dbdc9c5a22/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:12:9-43
+20        android:label="@string/app_name"
+20-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:13:9-41
+21        android:supportsRtl="true"
+21-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:14:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.MyTheme" >
+23-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:15:9-45
+24        <activity
+24-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:17:9-27:20
+25            android:name="com.alain.cursos.top.MainActivity"
+25-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:18:13-41
+26            android:exported="true"
+26-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:21:13-36
+27            android:label="@string/app_name" >
+27-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:19:13-45
+28            <intent-filter>
+28-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:22:13-26:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:23:17-69
+29-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:23:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:25:17-77
+31-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:25:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:28:9-30:15
+35            android:name="com.alain.cursos.top.AddArtistActivity"
+35-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:28:19-52
+36            android:label="@string/add_artist_title" />
+36-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:29:13-53
+37        <activity
+37-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:31:9-39:20
+38            android:name="com.alain.cursos.top.DetalleActivity"
+38-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:32:13-44
+39            android:label="@string/detalle_title"
+39-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:33:13-50
+40            android:parentActivityName="com.alain.cursos.top.MainActivity" >
+40-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:34:13-55
+41            <meta-data
+41-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:36:13-38:69
+42                android:name="android.support.PARENT_ACTIVITY"
+42-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:37:17-63
+43                android:value="com.alain.cursos.top.MainActivity" />
+43-->/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/AndroidManifest.xml:38:17-66
+44        </activity>
+45
+46        <provider
+46-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+47            android:name="androidx.startup.InitializationProvider"
+47-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+48            android:authorities="com.alain.cursos.top.androidx-startup"
+48-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+49            android:exported="false" >
+49-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+50            <meta-data
+50-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+51-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+52                android:value="androidx.startup" />
+52-->[androidx.emoji2:emoji2:1.0.0] /home/kdelenovo/.gradle/caches/transforms-3/8423aceeeeb7b7008623f7d8c435e4eb/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+53            <meta-data
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kdelenovo/.gradle/caches/transforms-3/c8f90db82e157d7f3c5debcb17b576c8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kdelenovo/.gradle/caches/transforms-3/c8f90db82e157d7f3c5debcb17b576c8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+55                android:value="androidx.startup" />
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/kdelenovo/.gradle/caches/transforms-3/c8f90db82e157d7f3c5debcb17b576c8/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+56        </provider>
+57    </application>
+58
+59</manifest>

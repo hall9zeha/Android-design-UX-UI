@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_content_detalle.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/content_detalle.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_activity_detalle.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_detalle.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_calendar.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_photo_size_select_actual.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_photo_size_select_actual.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/menu_menu_main.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable-night_ic_check.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable-night/ic_check.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_account_box.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_account_box.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/menu_menu_detalle.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/menu/menu_detalle.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable-night_ic_star.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable-night/ic_star.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_baseline_person_24.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_star.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_star.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_sentiment_satisfied.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_sentiment_satisfied.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_activity_add_artist.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_add_artist.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_check.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_check.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable-night_ic_account_edit.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable-night/ic_account_edit.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_background_image_button.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/background_image_button.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_item_artist.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/item_artist.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_image.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_image.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_account_edit.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_account_edit.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_content_main.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_account_plus.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_account_plus.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_baseline_place_24.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_baseline_place_24.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_earth_box.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_earth_box.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/menu_menu_save.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/menu/menu_save.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_close_box.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_close_box.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/merged_res/debug/drawable_ic_account_check.xml.flat",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/drawable/ic_account_check.xml"
+    }
+]

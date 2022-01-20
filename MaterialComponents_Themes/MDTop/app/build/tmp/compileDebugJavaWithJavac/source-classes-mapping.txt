@@ -1,0 +1,33 @@
+com/alain/cursos/top/databinding/ContentMainBinding.java
+ com.alain.cursos.top.databinding.ContentMainBinding
+com/alain/cursos/top/OnItemClickListener.java
+ com.alain.cursos.top.OnItemClickListener
+com/alain/cursos/top/TopDB.java
+ com.alain.cursos.top.TopDB
+com/alain/cursos/top/MyApplication.java
+ com.alain.cursos.top.MyApplication
+com/alain/cursos/top/MainActivity.java
+ com.alain.cursos.top.MainActivity
+com/alain/cursos/top/ArtistaAdapter.java
+ com.alain.cursos.top.ArtistaAdapter
+ com.alain.cursos.top.ArtistaAdapter$ViewHolder
+com/alain/cursos/top/databinding/ItemArtistBinding.java
+ com.alain.cursos.top.databinding.ItemArtistBinding
+com/alain/cursos/top/DialogSelectorFecha.java
+ com.alain.cursos.top.DialogSelectorFecha
+com/alain/cursos/top/databinding/ContentDetalleBinding.java
+ com.alain.cursos.top.databinding.ContentDetalleBinding
+com/alain/cursos/top/databinding/ActivityDetalleBinding.java
+ com.alain.cursos.top.databinding.ActivityDetalleBinding
+com/alain/cursos/top/databinding/ActivityAddArtistBinding.java
+ com.alain.cursos.top.databinding.ActivityAddArtistBinding
+com/alain/cursos/top/databinding/ActivityMainBinding.java
+ com.alain.cursos.top.databinding.ActivityMainBinding
+com/alain/cursos/top/Artista.java
+ com.alain.cursos.top.Artista
+com/alain/cursos/top/DetalleActivity.java
+ com.alain.cursos.top.DetalleActivity
+com/alain/cursos/top/BuildConfig.java
+ com.alain.cursos.top.BuildConfig
+com/alain/cursos/top/AddArtistActivity.java
+ com.alain.cursos.top.AddArtistActivity

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_main.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_detalle.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/content_detalle.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detalle.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_detalle.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_artist.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/item_artist.xml"
+    },
+    {
+        "merged": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_artist.xml",
+        "source": "/media/kdelenovo/F66CCC1D6CCBD691/CURSOS_DESARROLLADOS/Android_UX_UI/MaterialComponents_Themes/MDTop/app/src/main/res/layout/activity_add_artist.xml"
+    }
+]
