@@ -61,6 +61,7 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
         configActionBar();
         configImageView(mArtista.getFotoUrl());
         configCalendar();
+
         bind.fab.setOnClickListener(v->saveOrEdit());
         bind.content.etFechaNacimiento.setOnClickListener(v->onSetFecha());
         bind.imgDeleteFoto.setOnClickListener(this);
@@ -122,11 +123,19 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
 
 
         });
+        RequestOptions options= RequestOptions
+                .diskCacheStrategyOf(DiskCacheStrategy.NONE)
+                .centerCrop();
+        Glide.with(this)
+                .load(R.drawable.img_cover_material_design)
+                .apply(options)
+                .into(bind.imgCover);
         configTitle();
     }
 
     private void configTitle() {
         bind.toolbarLayout.setTitle(mArtista.getNombreCompleto());
+        bind.tvTitleName.setText(mArtista.getNombreCompleto());
     }
 
     private void configImageView(String fotoUrl) {
@@ -139,8 +148,12 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
                     .load(fotoUrl)
                     .apply(options)
                     .into(bind.imgFoto);
+
+
+
         } else {
             bind.imgFoto.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_photo_size_select_actual));
+
         }
 
         mArtista.setFotoUrl(fotoUrl);
@@ -162,7 +175,9 @@ public class DetalleActivity extends AppCompatActivity implements  View.OnClickL
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case android.R.id.home:
-                finish();
+                //Aqui usaremos este método para permitir que las animaciones se muestren al cerrar la actividad
+                finishAfterTransition();
+                //finish();
                 break;
             case R.id.action_save:
                 saveOrEdit();

@@ -33,4 +33,8 @@
     <string name="main_message_delete_fail">El artista no ha sido eliminado correctamente.</string>
     <string name="add_artist_title">Añadir artista</string>
     <string name="text_required">Requerido</string>
+    <string name="transition_image">transitionimage</string>
+    <string name="transitionNote">transitionNote</string>
+    <string name="transition_order">transitionOrder</string>
+    <string name="transitionName">transitionName</string>
 </resources>

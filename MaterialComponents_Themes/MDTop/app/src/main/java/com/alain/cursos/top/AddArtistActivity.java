@@ -94,7 +94,10 @@ public class AddArtistActivity extends AppCompatActivity implements  View.OnClic
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                finish();
+                //para que las transiciones se oten al presionar este botón debemos usar
+                //uno de dos casos igual de válidos
+                super.onBackPressed();
+                //finish();
                 break;
             case R.id.action_save:
                 saveArtist();

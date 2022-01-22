@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--es preferible no poner no modificar la propiedad duracion y dejarlo por defecto-->
+<slide xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:slideEdge="bottom"
+    >
+
+</slide>

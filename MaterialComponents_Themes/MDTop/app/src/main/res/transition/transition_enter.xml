@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<targets>
+        <target android:excludeId="@android:id/statusBarBackground"
+            />
+    </targets>-->
+    <explode
+        android:duration="2000"
+        >
+        //que no afecte a cierto elemento o elementos
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"
+                />
+        </targets>
+
+    </explode>
+    <fade
+        android:fadingMode="fade_in_out"
+        android:duration="1500"
+        android:startDelay="500"
+        >
+        //que solo afecte a cierto elemento
+        <targets>
+            <target android:targetId="@id/app_bar"
+                />
+        </targets>
+    </fade>
+</transitionSet>

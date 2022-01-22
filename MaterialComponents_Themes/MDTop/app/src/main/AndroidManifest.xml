@@ -14,7 +14,8 @@
         android:supportsRtl="true"
 
         android:theme="@style/Theme.MyTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:hardwareAccelerated="true">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -28,6 +29,7 @@
         </activity>
         <activity android:name=".AddArtistActivity"
             android:label="@string/add_artist_title"
+            android:theme="@style/MyTheme.Transition"
             />
         <activity
             android:name=".DetalleActivity"

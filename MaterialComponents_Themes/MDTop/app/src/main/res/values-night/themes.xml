@@ -22,6 +22,28 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
 
+        <!--Transiciones y animaciones-->
+        <!--  <item name="android:windowEnterTransition">@android:transition/slide_top</item>
+          <item name="android:windowExitTransition">@android:transition/slide_bottom</item>-->
+        <!--implemnetaremos una versión de las transiciones más personalizadas desde un recurso drawable-->
+        <!--transición fade-->
+         <item name="android:windowEnterTransition">@transition/transition_enter_se</item>
+         <item name="android:windowExitTransition">@transition/transition_exit</item>
+        <!--transición Slide-->
+      <!--  <item name="android:windowEnterTransition">@transition/slide_bottom</item>
+        <item name="android:windowExitTransition">@transition/fade_out</item>-->
+        <!--transición explode-->
+        <!--<item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>-->
+        <!--Transición compuesta-->
+        <!-- <item name="android:windowEnterTransition">@transition/transition_enter</item>
+         <item name="android:windowExitTransition">@transition/transition_enter</item>-->
+
+      <!--  <item name="android:windowEnterTransition">@transition/transition_enter_alt</item>
+        <item name="android:windowExitTransition">@transition/transition_enter_alt</item>-->
+        <!--transición compartir elemento -->
+        <item name="android:windowSharedElementEnterTransition">@transition/share_element</item>
+        <item name="android:windowSharedElementExitTransition">@transition/share_element</item>
     </style>
     <style name="Base.Materialtheme"  parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">?colorPrimaryVariant</item>

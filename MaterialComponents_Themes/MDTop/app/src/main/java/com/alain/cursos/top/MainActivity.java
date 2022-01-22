@@ -9,14 +9,17 @@ package com.alain.cursos.top;
  * Cursos Android ANT
  */
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
+import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 import androidx.appcompat.app.AlertDialog;
@@ -30,6 +33,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -176,10 +180,23 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
      *      Métodos implementados por la interface OnItemClickListener
      * ******/
     @Override
-    public void onItemClick(Artista artista) {
+    public void onItemClick(Artista artista, HashMap<String, View>views) {
         Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
         intent.putExtra(Artista.ID, artista.getId());
-        startActivity(intent);
+        //startActivity(intent);
+        //startActivity(intent,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        //le pasaremos el id de la transición para elelemento que definimos en el diseño xml de la circleimageview del item de
+        //artista
+        //al agregar mas elementos para la transición debemos usar pairs
+
+        List<String> keys=new ArrayList<>(views.keySet());
+        Pair<View, String> imgPair=new Pair<>(views.get(getString(R.string.transition_image)),keys.get(0));
+        Pair<View, String> notePair=new Pair<>(views.get(getString(R.string.transitionNote)),keys.get(1));
+        Pair<View, String> namePair=new Pair<>(views.get(getString(R.string.transitionName)),keys.get(2));
+        Pair<View, String> orderPair=new Pair<>(views.get(getString(R.string.transition_order)),keys.get(3));
+        /*ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(this,photoView,getString(R.string.transition_image));*/
+        ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(this, imgPair,notePair, namePair,orderPair);
+        startActivity(intent, options.toBundle());
     }
 
     @Override
@@ -213,7 +230,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         Intent intent = new Intent(MainActivity.this, AddArtistActivity.class);
         intent.putExtra(Artista.ORDEN, adapter.getItemCount()+1);
         //startActivity(intent);
-        startActivityForResult(intent, 1);
+        //startActivityForResult(intent, 1);
+        startActivityForResult(intent, 1, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     private void showMessage(int resource) {

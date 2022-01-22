@@ -9,7 +9,13 @@ package com.alain.cursos.top;
  * Cursos Android ANT
  */
 
+import android.view.View;
+
+import java.util.HashMap;
+
 interface OnItemClickListener {
-    void onItemClick(Artista artista);
+    //void onItemClick(Artista artista);
+    //usaremos el map para pasar pares de elementos ya que son demasiados parámetros
+    void onItemClick(Artista artista, HashMap<String,View> views);
     void onLongItemClick(Artista artista);
 }

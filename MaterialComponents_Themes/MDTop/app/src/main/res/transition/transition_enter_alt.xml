@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <targets>
+       <target android:excludeId="@android:id/statusBarBackground"
+           />
+   </targets>
+    <explode
+        android:duration="2000"
+        >
+
+    </explode>
+    //optimizamos algunas líneas al ponerlo directamente el tiempo en la etiqueta padre
+    //al ser compartido el tiempo por varios elementos
+    <transitionSet android:duration="1000" >
+    <fade
+        android:fadingMode="fade_in"
+
+        android:startDelay="1000">
+
+    </fade>
+    <fade
+        android:fadingMode="fade_out"
+
+      >
+
+    </fade>
+    </transitionSet>
+ <!--   <transitionSet android:duration="1000" >
+        <fade
+            android:fadingMode="fade_in"
+            android:duration="1000"
+            android:startDelay="1000">
+
+        </fade>
+        <fade
+            android:fadingMode="fade_out"
+            android:duration="2000"
+            >
+
+        </fade>
+    </transitionSet>-->
+</transitionSet>

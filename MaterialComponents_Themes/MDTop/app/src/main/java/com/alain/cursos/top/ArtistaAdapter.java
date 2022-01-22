@@ -26,6 +26,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -54,7 +55,13 @@ public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHold
     public void onBindViewHolder(ViewHolder holder, int position) {
         final Artista artista = artistas.get(position);
 
-        holder.setListener(artista, listener);
+        //holder.setListener(artista, listener);
+        holder.views.put(holder.bind.imgFoto.getTransitionName(),holder.bind.imgFoto);
+        holder.views.put(holder.bind.tvNote.getTransitionName(),holder.bind.tvNote);
+        holder.views.put(holder.bind.tvNombre.getTransitionName(),holder.bind.tvNombre);
+        holder.views.put(holder.bind.tvOrden.getTransitionName(),holder.bind.tvOrden);
+
+        holder.setListener(artista,holder.views, listener);
 
         holder.bind.tvNombre.setText(artista.getNombreCompleto());
         holder.bind.tvNote.setText(artista.getNotas());
@@ -95,13 +102,15 @@ public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHold
     class ViewHolder extends RecyclerView.ViewHolder {
 
         private ItemArtistBinding bind;
+        private HashMap<String, View> views;
         ViewHolder(ItemArtistBinding itemView) {
             super(itemView.getRoot());
             this.bind=itemView;
+            views= new HashMap<>();
         }
 
-        void setListener(final Artista artista, final OnItemClickListener listener){
-            bind.containerMain.setOnClickListener(view -> listener.onItemClick(artista));
+        void setListener(final Artista artista,  HashMap<String, View> views, final OnItemClickListener listener){
+            bind.containerMain.setOnClickListener(view -> listener.onItemClick(artista,  views));
 
             bind.containerMain.setOnLongClickListener(view -> {
                 listener.onLongItemClick(artista);
