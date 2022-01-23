@@ -3,35 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/bg_textview_item.xml" value="0.19537037037037036" />
-        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.19537037037037036" />
-        <entry key="app/src/main/res/drawable/item_color_ckecked_unchecked.xml" value="0.19537037037037036" />
-        <entry key="app/src/main/res/drawable/item_component.xml" value="0.2" />
-        <entry key="app/src/main/res/drawable/stroke_input_edit_text_custom.xml" value="0.19537037037037036" />
-        <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.1796875" />
-        <entry key="app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_scroll.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/activity_static.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.1537037037037037" />
-        <entry key="app/src/main/res/layout/content_static.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_alert_dialog.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_app_bar.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_app_bar_bottom.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_app_bar_top.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_bottom_navigation_bar.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_button.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_card.xml" value="0.2332214765100671" />
-        <entry key="app/src/main/res/layout/fragment_checkbox.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_floating_action_button.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_fullscreen_dialog.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_picker.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_snackbar.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/fragment_text_field.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/item_component.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/item_menu_dropdown.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/fragment_button.xml" value="0.1398148148148148" />
+        <entry key="app/src/main/res/layout/fragment_modal_navigation_drawer.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/fragment_navigation_drawer.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1398148148148148" />
+        <entry key="app/src/main/res/menu/menu_drawer.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/menu/menu_scroll.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
 
     private fun setUpComponentAdapter(){
         adapter= ComponentAdapter(ArrayList(), this)
+        bind.rvComponents.setHasFixedSize(true)
         bind.rvComponents.adapter = adapter
         adapter.add(ButtonFragment.getInstance())
         adapter.add(BottomNavigationBarFragment.getInstance())
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(AlertDialogFragment.getInstance())
         adapter.add(AppBarFragment.getInstance())
         adapter.add(PickerFragment.getInstance())
+        adapter.add(NavigationDrawerFragment.getInstance())
         adapter.reverse()
 
 

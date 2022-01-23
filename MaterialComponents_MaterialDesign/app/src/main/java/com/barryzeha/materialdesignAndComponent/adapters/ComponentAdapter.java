@@ -12,6 +12,9 @@ import com.barryzeha.materialdesignAndComponent.R;
 import com.barryzeha.materialdesignAndComponent.databinding.ItemComponentBinding;
 import com.barryzeha.materialdesignAndComponent.utils.Component;
 import com.barryzeha.materialdesignAndComponent.utils.OnClickListener;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -67,7 +70,14 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
             bind.getRoot().setOnClickListener(v->{
                 listener.onClick(component);
             });
-            bind.ivComponent.setImageResource(component.getPhotoRes());
+            RequestOptions options= RequestOptions
+                    .diskCacheStrategyOf(DiskCacheStrategy.ALL)
+                    .centerCrop();
+            Glide.with(bind.getRoot().getContext())
+                    .load(component.getPhotoRes())
+                    .apply(options)
+                    .into(bind.ivComponent);
+           // bind.ivComponent.setImageResource(component.getPhotoRes());
 
             bind.tvName.setText(component.getName());
 

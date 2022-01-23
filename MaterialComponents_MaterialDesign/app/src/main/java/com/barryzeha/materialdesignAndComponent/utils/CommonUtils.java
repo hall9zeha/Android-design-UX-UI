@@ -11,6 +11,7 @@ import com.barryzeha.materialdesignAndComponent.fragments.CardFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CheckboxFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.FloatingActionButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.MenuFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.NavigationDrawerFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.PickerFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SnackbarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.TextFieldFragment;
@@ -60,6 +61,9 @@ public class CommonUtils {
                 break;
             case "Picker":
                 fragment=new PickerFragment();
+                break;
+            case "NavigationDrawer":
+                fragment= new NavigationDrawerFragment();
                 break;
 
         }

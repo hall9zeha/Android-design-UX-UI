@@ -1,10 +1,12 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Base application theme. -->
     <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
+
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
@@ -25,6 +27,13 @@
         <!--   <item name="titleTextStyle">@style/myTitleToolbarStyle</item>-->
         <item name="android:textSize">20sp</item>
     </style>
+    <style name="myToolbarDrawerStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
 
     <style name="myTitleToolbarStyle">
         <item name="android:textColor">@color/white</item>
@@ -40,8 +49,10 @@
     <style name="Theme.MaterialDesign.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="myDialogStyle" parent ="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
-
+        <!--<item name="drawerArrowStyle">@style/myToolbarDrawerStyle</item>-->
+        <item name="android:theme">@style/myToolbarDrawerStyle</item>
     </style>
+
     <style name="fullScreenPicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
         <item name="android:windowIsFloating">false</item>
     </style>

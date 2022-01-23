@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ModalNavigationDrawerFragment">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      >
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:id="@+id/materialToolbar"
+      app:navigationIcon="@drawable/ic_menu"
+        app:title="@string/modalDrawer"
+        app:titleTextColor="@color/white"
+        style="@style/Theme.MaterialDesign"/>
+  </com.google.android.material.appbar.AppBarLayout>
+  <include
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/fragment_checkbox"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+  <com.google.android.material.navigation.NavigationView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/navView"
+      android:layout_gravity="start"
+      app:menu="@menu/menu_drawer"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
