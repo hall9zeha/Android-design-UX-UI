@@ -63,10 +63,15 @@ class NavigationDrawerFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
+        var transaction=parentFragmentManager.beginTransaction();
         when(view?.id){
             R.id.btnModalDrawer->{
                 var modalDrawer=ModalNavigationDrawerFragment()
-                modalDrawer.show(parentFragmentManager,ModalNavigationDrawerFragment.TAG)
+                modalDrawer.show(transaction,ModalNavigationDrawerFragment.TAG)
+            }
+            R.id.btnBottomDrawer->{
+                var bottomDrawer=BottomNavigationDrawerFragment()
+                bottomDrawer.show(transaction, BottomNavigationDrawerFragment.TAG)
             }
         }
     }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="myTheme.Smallcomponents" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <style name="myTheme.SmallComponents" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">cut</item>
         <item name="cornerRadius">4dp</item>
+    </style>
+    <style name="myTheme.MediumComponents" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    <style name="myTheme.LargeComponents" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerRadius">16dp</item>
     </style>
 </resources>

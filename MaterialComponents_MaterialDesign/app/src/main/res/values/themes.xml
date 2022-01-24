@@ -18,7 +18,9 @@
         <!--  <item name="actionBarStyle">@style/MyToolbarStyle</item>-->
 
         <!-- Customize your theme here. -->
-        <item name="shapeAppearanceSmallComponent">@style/myTheme.Smallcomponents</item>
+        <item name="shapeAppearanceSmallComponent">@style/myTheme.SmallComponents</item>
+        <item name="shapeAppearanceMediumComponent">@style/myTheme.MediumComponents</item>
+        <item name="shapeAppearanceLargeComponent">@style/myTheme.LargeComponents</item>
     </style>
 
     <style name="MyToolbarStyle" parent="Widget.MaterialComponents.ActionBar.Solid">
