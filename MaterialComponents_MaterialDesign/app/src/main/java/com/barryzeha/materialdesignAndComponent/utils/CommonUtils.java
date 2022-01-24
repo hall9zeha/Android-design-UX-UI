@@ -13,6 +13,7 @@ import com.barryzeha.materialdesignAndComponent.fragments.FloatingActionButtonFr
 import com.barryzeha.materialdesignAndComponent.fragments.MenuFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.NavigationDrawerFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.PickerFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.SheetsBottomFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SnackbarFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.TextFieldFragment;
 
@@ -64,6 +65,9 @@ public class CommonUtils {
                 break;
             case "NavigationDrawer":
                 fragment= new NavigationDrawerFragment();
+                break;
+            case "SheetsBottom":
+                fragment= new SheetsBottomFragment();
                 break;
 
         }

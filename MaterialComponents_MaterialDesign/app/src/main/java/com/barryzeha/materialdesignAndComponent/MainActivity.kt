@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() , OnClickListener{
         adapter.add(AppBarFragment.getInstance())
         adapter.add(PickerFragment.getInstance())
         adapter.add(NavigationDrawerFragment.getInstance())
+        adapter.add(SheetsBottomFragment.getInstance())
         adapter.reverse()
 
 

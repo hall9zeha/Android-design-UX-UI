@@ -155,4 +155,15 @@
     <string name="modalDrawer">Modal Drawer</string>
     <string name="bottomDrawer">Bottom Drawer</string>
     <string name="app_bar_bottom">App bar Bottom</string>
+    <string name="standarBottom">Standar bottom</string>
+    <string name="modalBottom">Modal bottom</string>
+    <string name="bottom_standar_place_title">Standar Sheet Bottom</string>
+    <string name="bottom_standar_place_content">Curso en línea</string>
+    <string name="btnLinkText">Website</string>
+    <string name="btnCallText">Call</string>
+    <string name="btnSaveText">Save</string>
+    <string name="textChronology">Hace dos días</string>
+    <string name="textAddress">"457878 Unknow BackStreet "</string>
+    <string name="textSchedule">Open</string>
+    <string name="askHint">Haz una pregunta</string>
 </resources>
