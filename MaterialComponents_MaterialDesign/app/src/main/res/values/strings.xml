@@ -166,4 +166,5 @@
     <string name="textAddress">"457878 Unknow BackStreet "</string>
     <string name="textSchedule">Open</string>
     <string name="askHint">Haz una pregunta</string>
+    <string name="hintUser">Username</string>
 </resources>

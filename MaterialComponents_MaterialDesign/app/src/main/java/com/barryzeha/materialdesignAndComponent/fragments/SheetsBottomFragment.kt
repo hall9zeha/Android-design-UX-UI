@@ -69,7 +69,8 @@ class SheetsBottomFragment : Fragment(), View.OnClickListener {
                }
            }
            R.id.btnModal->{
-
+                val fullScreenSheet=ModalBottomSheetFullScreenFragment()
+               fullScreenSheet.show(parentFragmentManager.beginTransaction(), ModalBottomSheetFullScreenFragment.TAG)
            }
            R.id.imgBtnExpanded->{
                if(isExpanded){
