@@ -3,16 +3,20 @@ package com.barryzeha.materialdesignAndComponent.fragments
 import android.app.Dialog
 import android.content.res.Resources
 import android.os.Bundle
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.transition.TransitionManager
 import com.barryzeha.materialdesignAndComponent.R
 import com.barryzeha.materialdesignAndComponent.databinding.FragmentModalBottomSheetFullScreenBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.transition.MaterialFadeThrough
+import com.google.android.material.transition.SlideDistanceProvider
 
 
 class ModalBottomSheetFullScreenFragment : BottomSheetDialogFragment() {
@@ -33,6 +37,16 @@ class ModalBottomSheetFullScreenFragment : BottomSheetDialogFragment() {
         bottomSheetBehavior.state=BottomSheetBehavior.STATE_HALF_EXPANDED
         bottomSheetBehavior.addBottomSheetCallback(object:BottomSheetBehavior.BottomSheetCallback(){
             override fun onStateChanged(bottomSheet: View, newState: Int) {
+                /*
+                * Agregamos una animación al cambio de toolbar el expandir y colapsar la vista, esta implementación viene desde
+                * la sección del curso de motion
+                * */
+                var fadeThrough=MaterialFadeThrough()
+                fadeThrough.duration = 550L
+                fadeThrough.secondaryAnimatorProvider=SlideDistanceProvider(Gravity.TOP)
+                TransitionManager.beginDelayedTransition(bind.containerBar,fadeThrough)
+
+
                 var statusBarColor=ContextCompat.getColor(requireContext(), R.color.purple_700)
                 if(BottomSheetBehavior.STATE_EXPANDED==newState){
                     bind.appBar.visibility=View.VISIBLE
