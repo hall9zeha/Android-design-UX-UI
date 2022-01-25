@@ -11,6 +11,7 @@ import com.barryzeha.materialdesignAndComponent.fragments.CardFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.CheckboxFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.FloatingActionButtonFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.MenuFragment;
+import com.barryzeha.materialdesignAndComponent.fragments.MotionFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.NavigationDrawerFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.PickerFragment;
 import com.barryzeha.materialdesignAndComponent.fragments.SheetsBottomFragment;
@@ -69,6 +70,9 @@ public class CommonUtils {
             case "SheetsBottom":
                 fragment= new SheetsBottomFragment();
                 break;
+            case "Motion":
+                fragment=new MotionFragment();
+                        break;
 
         }
         return fragment;

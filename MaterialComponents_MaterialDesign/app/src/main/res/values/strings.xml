@@ -167,4 +167,5 @@
     <string name="textSchedule">Open</string>
     <string name="askHint">Haz una pregunta</string>
     <string name="hintUser">Username</string>
+    <string name="back">Back</string>
 </resources>

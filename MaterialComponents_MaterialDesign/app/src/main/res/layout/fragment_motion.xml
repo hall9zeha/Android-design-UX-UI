@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionContainerMain"
+    tools:context=".fragments.MotionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/ctlMotionEnd"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_gravity="bottom">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerBar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnClose"
+                android:src="@drawable/ic_close"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="@dimen/common_padding_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/action_settings"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/common_padding_default"
+                android:layout_marginEnd="@dimen/common_padding_default"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnClose"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewOut"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/containerBar">
+            <include layout="@layout/fragment_button"
+            android:id="@+id/includedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewIn"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/common_padding_default"
+            app:layout_constraintTop_toBottomOf="@id/containerBar"
+            >
+            <include
+                android:id="@+id/includedCheckbox"
+                layout="@layout/fragment_checkbox"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBack"
+                android:text="@string/back"
+                android:layout_marginTop="64dp"/>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabMotionStart"
+        app:tint="@color/white"
+        android:src="@drawable/ic_filter_list"
+        android:layout_margin="@dimen/common_padding_default"
+        android:layout_gravity="bottom|end"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
