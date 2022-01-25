@@ -25,15 +25,15 @@
         android:id="@+id/tvNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/artist_hint_nombre"
-        android:transitionName="@string/transitionName"
-        android:textAppearance="@style/ItemLarge"
-        android:layout_marginEnd="@dimen/item_padding_horizontal"
         android:layout_marginStart="@dimen/item_padding_horizontal"
-        app:layout_constraintStart_toEndOf="@id/imgFoto"
+        android:layout_marginEnd="@dimen/item_padding_horizontal"
+
+        android:hint="@string/artist_hint_nombre"
+        android:textAppearance="@style/ItemLarge"
+        android:transitionName="@string/transitionName"
         app:layout_constraintEnd_toStartOf="@id/tvOrden"
-        app:layout_constraintTop_toTopOf="parent"
-       />
+        app:layout_constraintStart_toEndOf="@id/imgFoto"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="0dp"
