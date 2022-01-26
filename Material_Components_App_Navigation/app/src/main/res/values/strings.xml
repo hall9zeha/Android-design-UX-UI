@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MD Postres</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_title">Productos</string>
+    <string name="imgDescription">Imagen del producto</string>
+    <string name="hintTvProduct">Nombre del producto</string>
+    <string name="add_product">Añadir</string>
+    <string name="name_product_hint">Nombre del producto</string>
+</resources>

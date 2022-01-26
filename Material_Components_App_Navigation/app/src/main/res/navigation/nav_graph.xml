@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.barryzeha.mdpostres.ProductFragment"
+        android:label="@string/product_title"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.barryzeha.mdpostres.CarFragment"
+        android:label="fragment_car"
+        tools:layout="@layout/fragment_car" />
+</navigation>
