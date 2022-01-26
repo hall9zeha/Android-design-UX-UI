@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/item_padding_horizontal"
         android:layout_marginEnd="@dimen/item_padding_horizontal"
-
         android:hint="@string/artist_hint_nombre"
         android:textAppearance="@style/ItemLarge"
         android:transitionName="@string/transitionName"
@@ -41,6 +40,8 @@
         android:id="@+id/tvNote"
         android:transitionName="@string/transitionNote"
         android:hint="@string/artist_hint_notas"
+        android:maxLines="2"
+        android:ellipsize="end"
         android:textAppearance="@style/ItemMedium"
         android:layout_marginBottom="8dp"
         app:layout_constraintStart_toStartOf="@id/tvNombre"

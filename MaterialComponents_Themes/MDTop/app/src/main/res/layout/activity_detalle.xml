@@ -20,11 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:title="@string/artist_hint_nombre"
-
+            app:collapsedTitleTextAppearance="@style/TextAppearance.MyTypes.Headline6"
             app:contentScrim="@color/collapsing_toolbar_color"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar"
-            app:expandedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded.Shadow">
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarExpanded">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -65,12 +65,13 @@
                     android:text="@string/artist_hint_nombre"
                     android:transitionName="@string/transitionName"
                     android:ellipsize="end"
+                    android:letterSpacing="0.0"
                     android:textColor="@color/gray_500"
-                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.MyTypes.Headline5"
                     android:layout_gravity="start|bottom"
                     android:layout_marginStart="32dp"
                     android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="26dp"
+                    android:layout_marginBottom="23.5dp"
                     />
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@id/imgFoto"
