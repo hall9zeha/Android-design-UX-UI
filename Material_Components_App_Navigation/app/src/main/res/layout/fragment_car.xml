@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCheck"
+        android:text="@string/product_list"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_margin="@dimen/common_padding_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewCar"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginEnd="@dimen/common_padding_default"
+        tools:listitem="@layout/item_car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCheck"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="@dimen/card_divider_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewCar"
+        android:layout_marginEnd="@dimen/common_padding_middle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSum"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        tools:text="Total: S/120.00"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPay"
 
-</FrameLayout>
+        android:layout_marginBottom="@dimen/common_padding_default"
+        app:icon="@drawable/ic_payment"
+        app:iconGravity="textEnd"
+        android:text="@string/car_pay"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:layout_marginBottom="@dimen/common_padding_default"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="start"
+        app:iconPadding="@dimen/common_padding_none"
+        android:text="@string/car_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnPay"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

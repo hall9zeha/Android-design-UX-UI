@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.view.LayoutInflater;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.barryzeha.mdpostres.databinding.FragmentProductBinding;
+import com.google.android.material.transition.MaterialFadeThrough;
+import com.google.android.material.transition.MaterialSharedAxis;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,9 @@ public class ProductFragment extends Fragment implements onClickProduct {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setReenterTransition(new MaterialSharedAxis(MaterialSharedAxis.X, false));
+        setExitTransition(new MaterialSharedAxis(MaterialSharedAxis.X, true));
+        setEnterTransition(new MaterialFadeThrough());
 
     }
 
@@ -39,10 +45,25 @@ public class ProductFragment extends Fragment implements onClickProduct {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ProductAdapter adapter= new ProductAdapter(getProducts(), this);
+        ProductAdapter adapter = new ProductAdapter(getProducts(), this);
         bind.recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         bind.recyclerView.setHasFixedSize(true);
         bind.recyclerView.setAdapter(adapter);
+
+        /*
+         * Ahora usaremos la acción creada en el modo grafico del navigation para ir del product fragment
+         * al carFragment con navigation
+         * */
+        bind.btnAddCar.setOnClickListener(v -> {
+               /* NavHostFragment.findNavController(this)
+                .navigate(R.id.action_product_to_car));*/
+            //usaremos una librería de navigation de google para habilitar el pase de parámetros entre fragmentos
+            //a través del navHost
+            ProductFragmentDirections.ActionProductToCar action = ProductFragmentDirections.actionProductToCar();
+            action.setProductsArgs(getProductsStr());
+            NavHostFragment.findNavController(this).navigate(action);
+
+        });
     }
 
     private List<Product> getProducts() {
@@ -64,9 +85,24 @@ public class ProductFragment extends Fragment implements onClickProduct {
 
         return products;
     }
+    private String[] getProductsStr(){
+        String[] productsStr= new String[selectedProduct.size()];
+        int index=0;
+        for(Product product : selectedProduct){
+            productsStr[index]=product.getName();
+            index++;
+
+        }
+        return productsStr;
+    }
 
     @Override
     public void onclick(Product product) {
-
+        if(product.isSelected()){
+            selectedProduct.add(product);
+        }
+        else{
+            selectedProduct.remove(product);
+        }
     }
 }

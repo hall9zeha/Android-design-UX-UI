@@ -10,7 +10,8 @@
         android:id="@+id/tvPrice"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         android:textStyle="bold"
-        android:hint="S/1.00"
+
+        android:text="S/1.00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
