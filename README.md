@@ -20,5 +20,9 @@ Proyecto escrito en Java y Kotlin, usando las últimas referencias y recomendaci
 
 ## Capturas de pantalla de las aplicaciones :framed_picture:
 
+ <img src="https://github.com/hall9zeha/Android-design-UX-UI/blob/main/Screenshots/Screenshot_20220303-142118~2.jpg" alt="drawing" width="300"/> |
+ <img src="https://github.com/hall9zeha/Android-design-UX-UI/blob/main/Screenshots/Screenshot_20220303-142127~2.jpg" alt="drawing" width="300"/> |
+ <img src="https://github.com/hall9zeha/Android-design-UX-UI/blob/main/Screenshots/Screenshot_20220303-142232~2.jpg" alt="drawing" width="300"/>
+
 
 
